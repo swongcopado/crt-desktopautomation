@@ -18,12 +18,21 @@ Close Calculator
 
 
 *** Test Cases ***
-Test Addition
+Test Windows Calculator
     [Documentation]          Tests the addition function on the Calculator
     Open Calculator
+    ### Test Add
     ClickText                9
     ClickIcon                ${base-image-path}\\${plus-sign}
     ClickText                5
     ClickIcon                ${base-image-path}\\${equals-sign}
     VerifyText               14
+    ClickIcon                ${base-image-path}\\${clear-sign}
+    #### Test Minus
+    ClickText                9
+    ClickIcon                ${base-image-path}\\${minus-sign}
+    ClickText                5
+    ClickIcon                ${base-image-path}\\${equals-sign}
+    VerifyText               4
+    ### Done testing
     Close Calculator
