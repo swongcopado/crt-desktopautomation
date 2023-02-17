@@ -1,6 +1,11 @@
 *** Settings ***
 
-Documentation                Desktop test automation
+Documentation                Desktop test automation. 
+...                          Instructions: 
+...                            Clone this repo to your local machine.
+...                            Open common.robot in resources folder.
+...                            Update ${base-image-path} variable to point to the images folder of this cloned repository.
+
 Library                      QVision
 Resource                     ../resources/common.robot
 
