@@ -20,7 +20,7 @@ Test Addition
     [Documentation]          Tests the addition function on the Calculator
     Open macOS Calculator
     ClickText                9
-    ClickIcon                suite/resources/calc-plus.jpg
+    ClickIcon                ./resources/calc-plus.jpg
     ClickText                5
     ClickText                =
     VerifyText               15
