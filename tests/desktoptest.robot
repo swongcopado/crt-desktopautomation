@@ -14,7 +14,7 @@ Open Calculator
 
 Close Calculator
     ClickText                Calculator
-    ClickText                Close Calculator
+    CloseWindow
 
 
 *** Test Cases ***
@@ -24,6 +24,6 @@ Test Addition
     ClickText                9
     ClickIcon                ${base-image-path}\\${plus-sign}
     ClickText                5
-    ClickText                ${base-image-path}\\${equals-sign}
-    VerifyText               15
-    # CloseWindow
+    ClickIcon                ${base-image-path}\\${equals-sign}
+    VerifyText               14
+    Close Calculator
