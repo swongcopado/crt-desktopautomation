@@ -2,15 +2,17 @@
 
 Documentation                Desktop test automation
 Library                      QVision
+Resource                     ../resources/common.robot
+
 Suite Setup
 Suite Teardown
 
 *** Keywords ***
-Open macOS Calculator
+Open Calculator
     RunCommand               calc.exe
     # VerifyText             Calculator
 
-Close macOS Calculator
+Close Calculator
     ClickText                Calculator
     ClickText                Close Calculator
 
@@ -18,9 +20,9 @@ Close macOS Calculator
 *** Test Cases ***
 Test Addition
     [Documentation]          Tests the addition function on the Calculator
-    Open macOS Calculator
+    Open Calculator
     ClickText                9
-    ClickIcon                c:\\Temp\\resources\\calc-plus.jpg
+    ClickIcon                ${base-image-path}${plus-sign}
     ClickText                5
     ClickText                =
     VerifyText               15
