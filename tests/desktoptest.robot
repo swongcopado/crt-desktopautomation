@@ -22,8 +22,8 @@ Test Addition
     [Documentation]          Tests the addition function on the Calculator
     Open Calculator
     ClickText                9
-    ClickIcon                ${base-image-path}${plus-sign}
+    ClickIcon                ${base-image-path}\\${plus-sign}
     ClickText                5
-    ClickText                ${base-image-path}${equals-sign}
+    ClickText                ${base-image-path}\\${equals-sign}
     VerifyText               15
     # CloseWindow
